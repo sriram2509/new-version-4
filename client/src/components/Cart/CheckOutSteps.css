@@ -1,0 +1,24 @@
+.MultiStepConnector-line {
+  display: none !important;
+}
+
+.MultiStepConnector-root {
+  height: 1.5px;
+  background-color: rgba(200, 200, 200, 1);
+}
+
+.MultiStepConnector-active,
+.MultiStepConnector-completed {
+  background: rgba(28, 168, 196, 1);
+  background-color: linear-gradient(
+    65deg,
+    rgba(6, 42, 30, 1) 20%,
+    rgba(28, 168, 196, 1) 100%
+  );
+}
+
+/* .MuiStepLabel-label {
+} */
+.css-qivjh0-MuiStepLabel-label.MuiStepLabel-alternativeLabel {
+  margin-top: 2px;
+}

@@ -1,0 +1,47 @@
+.orderSuccess {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+  margin: auto;
+  /* padding: 10vmax; */
+}
+
+.orderSuccess > svg {
+  font-size: 6rem;
+  color: rgb(6, 42, 30);
+  color: linear-gradient(0deg, rgba(6, 42, 30, 1) 20%, rgb(16, 99, 116) 90%);
+}
+
+.orderSuccess > p {
+  margin-top: 0.5rem;
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.orderSuccess > a {
+  cursor: pointer;
+  margin: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  /* width: 25%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  color: rgb(23, 120, 155);
+  padding: 7px 2.8rem;
+  font-size: 1rem;
+  border-radius: 40px;
+  background-color: rgba(194, 194, 194, 0.8);
+  transition: all 0.5s;
+}
+
+.orderSuccess > a:hover {
+  background-color: rgba(6, 32, 42, 0.9);
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+}

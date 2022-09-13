@@ -1,0 +1,293 @@
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  align-items: center;
+  height: 70px;
+  padding: 0 2rem;
+  /* background-color: #06202a; */
+  background: linear-gradient(135deg,#C1A582 0,#CC4400 100%);
+  /* background-image: linear-gradient(147deg, #FFE53B 0%, #E89609 74%); */
+}
+
+.navbar > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logoContainer > a {
+  font-size: 19px;
+  color: #f5f5f5;
+  font-weight: 600;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logoContainer > a > span {
+  font-size: 20px;
+  color: #fd6a1b;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.pagesContainer > ul {
+  list-style: none;
+  margin: auto;
+  margin-top: 0;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0;
+}
+
+.pagesContainer > ul > li {
+  border-top: 1.5px solid transparent;
+  margin-inline: 1rem;
+  margin-top: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagesContainer > ul > li:hover {
+  border-top: 1.5px solid #f36309;
+  font-weight: 900;
+  /* color: #23cfb5; */
+  color: #000;
+}
+
+.pagesContainer > ul > li:hover a {
+  /* color: #23cfb5; */
+  /* color: #000; */
+  color: #CB4B3D;
+}
+
+.pagesContainer > ul > li > a {
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(240, 232, 232);
+  
+  font-weight: 500;
+  padding-left: 7rem;
+}
+
+.userContainer > ul {
+  list-style: none;
+  padding: 0;
+  height: 100%;
+  margin-block: auto;
+  margin-left: auto;
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.userContainer > ul > li {
+  padding-inline: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userContainer > ul > .loginListItem {
+  width: 45.6px;
+}
+
+.loginListItemNone {
+  display: none;
+}
+
+.userContainer > ul > li > a {
+  font-size: 18px;
+  color: #f5f5f5;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.userContainer > ul > li > a:hover .icon {
+  margin-top: -20px;
+  color: #ea6417;
+}
+
+.userContainer > ul > li > a > svg {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.35rem;
+}
+
+.userContainer > ul > li > a > span {
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  top: 8px;
+  display: none;
+}
+
+.userContainer > ul > li > a > p.badge {
+  position: absolute;
+  background: red;
+  font-size: 0.7rem;
+  border-radius: 100%;
+  width: 16px;
+  text-align: center;
+  top: -8px;
+  border: 1px solid #06202a;
+  right: -9px;
+}
+
+.userContainer > ul > li > a:hover > p.badge {
+  top: -28px;
+}
+
+.userContainer > ul > li > a > span.iconTooltipOne {
+  left: -8px;
+}
+
+.userContainer > ul > li > a > span.iconTooltipThree {
+  left: -4px;
+}
+
+.userContainer > ul > li > a:hover .iconTooltip {
+  display: block;
+  color: #ff5906;
+}
+
+.userContainer li.hamburgerContainer {
+  display: none;
+}
+
+.hamburgerContainer > div {
+  font-size: 18px;
+  color: #f5f5f5;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburgerContainer > div > svg {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.6rem;
+}
+
+.hamburgerContainer > div:hover svg {
+  color: #f8620a;
+}
+
+.hamburgerMenu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.hamburgerMenu > ul {
+  background: rgba(0, 0, 0, 0.75);
+  list-style: none;
+  position: absolute;
+  left: -94px;
+  top: 14px;
+  padding-left: 0;
+  z-index: 10;
+}
+
+.hamburgerMenu > ul > li {
+  margin: 1.1rem 1.75rem;
+}
+
+.hamburgerMenu > ul > li > a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.hamburgerMenu > ul > li > a:hover {
+  color: #ee6d17;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    grid-template-columns: 2fr 2fr;
+    border: none;
+    padding-inline: 1rem;
+  }
+
+  div.pagesContainer {
+    display: none;
+  }
+
+  .userContainer > ul > .loginListItem {
+    width: 37.6px;
+  }
+
+  .userContainer > ul > li {
+    padding-inline: 0.5rem;
+  }
+
+  .userContainer li.hamburgerContainer {
+    display: flex;
+    width: 20px;
+    padding-right: 0;
+  }
+}
+.text-white {
+  color: #fff!important;
+}
+
+/* .text-white {
+  color: #fff!important;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  margin-right: 0.8rem;
+  align-items: center;
+    text-transform: uppercase;
+    display: flex!important;
+    margin-left: 1rem!important;
+    padding-right: 1.5rem!important;
+    padding-left: 1.5rem!important;
+    margin-right: 3rem!important;
+
+} */
+
+.header-contact {
+  align-items: center;
+  text-transform: uppercase;
+}
+.d-lg-flex {
+  display: -ms-flexbox!important;
+  display: flex!important;
+}
+
+
+/* ------------------------------------------------------------ */
+/* .header-contact {
+  align-items: center;
+  text-transform: uppercase;
+}
+@media (min-width: 1200px){
+.mr-xl-5, .mx-xl-5 {
+  margin-right: 3rem!important;
+}
+.pl-4, .px-4 {
+  padding-left: 1.5rem!important;
+}
+.pr-4, .px-4 {
+  padding-right: 1.5rem!important;
+}
+.ml-3, .mx-3 {
+  margin-left: 1rem!important;
+}} */

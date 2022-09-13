@@ -1,0 +1,237 @@
+/* Roboto font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+.banner {
+  /* background-image: linear-gradient(to top, #059669, #06202a); */
+  /* background-image: url(https://blog.goway.com/globetrotting/wp-content/uploads/2016/01/Traditional-Indian-food-in-Metal-Dish-on-Rooftop-Restaurant-with-Taj-Mahal-Background-Agra-Uttar-Pradesh-India_283227866.jpg); */
+  background-image: url("../../images/ella-olsson-oPBjWBCcAEo-unsplash.jpg");
+  /* background-image: url('../../images/fried-rice-plate-white-wooden-floor.jpg'); */
+  background-repeat:no-repeat;
+  background-size:cover;
+  height: 85vh;
+  /* width: 100vw; */
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  color: #f5f5f5;
+  position: relative;
+}
+
+.banner > h1 {
+  margin: 2.6rem 0 6rem 0;
+  font: 500 2.56rem "Roboto";
+  color: rgba(245, 245, 245, 0.9);
+}
+
+.banner > h1.backgroundHeading {
+  display: none;
+}
+
+.banner > p {
+  /* font: 300 2vw default; */
+  /* color: rgba(240, 239, 239, 0.8);
+  font-size: 1.4rem;
+  margin-top: 8.5rem; */
+  /* padding-top: 0px; */
+}
+
+.banner > p {
+  color: rgba(0, 0, 0);
+  font-size: 2rem;
+  margin-top: 8.5rem;
+  font-weight: bold;
+  padding-right: 5rem;
+  font-family: sans-serif;
+  padding-top: 200px;
+}
+
+.banner > a > button {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  background-color: whitesmoke;
+  border: none;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.banner > a > button:hover {
+  background-color: #f89f21ee;
+  /* color: #CB4B3D; */
+}
+
+.banner > a > button svg {
+  color: rgb(247, 193, 17);
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.banner > a > button svg:hover {
+  color: #ffdfaf;
+  /* color: #CB4B3D; */
+}
+
+.banner::after {
+  content: "";
+  width: 100%;
+  height: 90vh;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  -webkit-clip-path: polygon(50% 91%, 100% 75%, 100% 100%, 0 100%, 0 75%);
+  clip-path: polygon(50% 91%, 100% 75%, 100% 100%, 0 100%, 0 75%);
+}
+
+.homeHeading {
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.8rem;
+  border-bottom: 1.5px solid rgba(54, 54, 54, 0.6);
+  width: 22rem;
+  padding: 0.875rem;
+  margin: 1.5rem auto;
+  margin-bottom: 4.5rem;
+  font-weight: 500;
+}
+.padding{
+  padding-top: 50px;
+}
+.padding1{
+  padding-top: 200px;
+}
+
+/* ------------------------ProductCard---------------------- */
+#container {
+  display: grid;
+  margin: 2rem auto;
+  width: 80%;
+  height: 100%;
+  justify-content: center;
+  max-width: 100%;
+  grid-template-columns: repeat(auto-fit, 16rem);
+  
+}
+
+.productCard {
+  width: 14rem;
+  /* height: 14rem; */
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  margin: 1rem;
+  color: rgb(39, 39, 39);
+  transition: all 0.3s;
+  border: 1px solid rgba(205, 205, 205, 0.4);
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgb(201, 197, 197);
+}
+
+.productCard > img {
+  width: 223px;
+  height: 223px;
+  object-fit: cover;
+  padding: 0;
+  border-radius: 15px;
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+.productCard .productsContainer {
+  padding: 0.5rem;
+}
+
+.productCard .productsContainer > p {
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 0;
+  color: #06202a;
+  text-transform: uppercase;
+}
+
+.productCard > .productsContainer > div {
+  margin: 0.6rem 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.css-1lauo1g-MuiRating-root {
+  color: rgb(255 99 71);
+}
+
+.productCard > .productsContainer > div > span:last-child {
+  width: 44%;
+  font: 400 0.8rem "Roboto";
+  display: flex;
+  justify-content: flex-end;
+}
+
+.productCard > .productsContainer > span {
+  margin: 0.5rem;
+  color: tomato;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.productCard:hover {
+  /* box-shadow: 0 0 5px rgba(35, 207, 181, 0.8); */
+  box-shadow: 0 0 5px #C7663D;
+  transform: translateY(-0.5vmax);
+}
+
+/* ----media queries----- */
+@media screen and (max-width: 600px) {
+  .banner > p {
+    font-size: 1.2rem;
+  }
+
+  .banner > h1 {
+    margin: 3rem 3rem 5rem 3rem;
+    font: 700 2.96rem "Roboto";
+    text-align: center;
+  }
+
+  .banner > h1.backgroundHeading {
+    display: block;
+    position: absolute;
+    opacity: 0.05;
+    top: 7.7rem;
+    letter-spacing: 2px;
+    font-size: 6rem;
+    line-height: 5rem;
+  }
+
+  .banner > a {
+    z-index: 1;
+  }
+}
+/* ------------------------ProductCard---------------------- */
+
+
+.center{ 
+  /* padding-left: 55px; */
+  font-size: 1vmax;
+  margin: 0.5vmax;
+  font-weight: bold;
+  color: tomato;
+}
+
+/* .center1{ */
+  /* padding-left: 100px; */
+/* } */
+
+/* .center2{ */
+  /* padding-left: 110px; */
+/* }  */

@@ -1,0 +1,102 @@
+.productListContainer {
+  width: 100%;
+  background-color: rgb(255, 254, 254);
+  border-left: 1px solid rgba(0, 0, 0, 0.158);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#productListHeading {
+  transition: all 0.5s;
+  margin-block: 2rem;
+  margin-inline: auto;
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 2.35vmax;
+  text-transform: uppercase;
+  letter-spacing: 0.5vmax;
+  word-spacing: 0.9vmax;
+  padding: 0.5rem;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.55);
+}
+
+.productListTable {
+  background-color: rgb(247, 189, 151);
+  /* border: none !important; */
+  border-bottom: 2px;
+  border-top: 2px;
+  border-left: 2px;
+  border-right: 2px;
+  border-color: black;
+}
+
+.productListTable div {
+  /* border: none !important; */
+  border-bottom: 2px;
+  border-top: 2px;
+  border-left: 2px;
+  border-right: 2px;
+  border-color: black;
+}
+
+.productListTable a,
+.productListTable button {
+  /* color: rgba(0, 0, 0, 0.527); */
+  color: black;
+  transition: all 0.5s;
+}
+
+.productListTable a:hover {
+  color: rgb(250, 137, 8);
+}
+
+.productListTable button:hover {
+  color: rgb(236, 30, 30);
+}
+
+.MuiDataGrid-columnHeaders {
+  background: rgb(6, 42, 30);
+  /* background: linear-gradient(
+    65deg,
+    rgba(6, 42, 30, 1) 10%,
+    rgb(16, 99, 116) 90%
+  ); */
+  background: linear-gradient(135deg,#C1A582 0,#CC4400 100%);
+}
+
+.actionsHeadingComponent {
+  display: flex;
+  justify-content: center;
+}
+
+.MuiDataGrid-columnHeaders > div {
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  /* padding: 0.5vmax !important; */
+}
+
+.MuiDataGrid-columnHeaders > div:last-child {
+  display: flex;
+  justify-content: center;
+}
+
+.MuiDataGrid-columnSeparator {
+  display: none !important;
+}
+
+.greenColor {
+  color: green;
+}
+
+.redColor {
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .productListTable div {
+    font: 300 4vw "Roboto";
+  }
+}

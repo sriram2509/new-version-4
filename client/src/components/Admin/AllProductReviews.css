@@ -1,0 +1,127 @@
+.productReviewsContainer {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  border-left: 1px solid rgba(0, 0, 0, 0.158);
+  min-height: 100vh;
+}
+
+.productReviewsForm {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 3vmax;
+  background-color: white;
+}
+
+.productReviewsFormHeading {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 2rem;
+  width: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+  word-spacing: 1rem;
+  padding: 0.5rem;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.55);
+}
+
+.productReviewsForm > div {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  margin: 3vmax 0 2vmax;
+}
+
+.productReviewsForm > div > input {
+  padding: 1vmax 3.5vmax;
+  padding-right: 1vmax;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.productReviewsForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+#createProductBtn {
+  cursor: pointer;
+  border: none;
+  width: 60%;
+  border-radius: 20px;
+  /* height: 40px; */
+  padding: 0.6vmax;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.06rem;
+  /* background-color: rgb(12, 64, 83); */
+  /* background: rgb(250, 137, 8); */
+  /* background-image: linear-gradient(147deg, rgb(35,31,32) 0%, #e0dbc7 50%); */
+  background: linear-gradient(135deg,#C1A582 0,#CC4400 100%);
+  /* margin-right: 24px; */
+  color: #000;
+  transition: all 0.5s;
+}
+
+#createProductBtn:hover {
+  filter: brightness(1.2) contrast(1.2);
+}
+
+.noProductReviewsHeading {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.greenColor {
+  color: green;
+}
+
+.redColor {
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .productReviewsContainer {
+    border-left: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.158);
+  }
+
+  .productReviewsForm > div > input {
+    padding: 2.5vmax 5vmax;
+  }
+
+  .productReviewsForm {
+    width: 100%;
+  }
+
+  .productReviewsFormHeading {
+    width: 100%;
+    word-spacing: 0.1rem;
+  }
+
+  .productReviewsForm > div > svg {
+    font-size: 2rem;
+  }
+  productReviewsForm > div {
+    width: 75%;
+  }
+
+  #createProductBtn {
+    width: 70%;
+  }
+}

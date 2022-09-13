@@ -1,0 +1,129 @@
+.dashboardPage {
+  width: 100vw;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  position: absolute;
+}
+
+.dashboardContainer {
+  border-left: 1px solid rgba(0, 0, 0, 0.13);
+  background-color: rgb(255, 255, 255);
+  padding: 3rem 0;
+}
+
+.dashboardContainer > h1 {
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 2.35vmax;
+  /* width: 29rem */
+  width: 23%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5vmax;
+  word-spacing: 0.9vmax;
+  padding: 0.5rem;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.55);
+  margin: auto;
+}
+
+.dashboardSummary {
+  margin: 2rem 0;
+}
+
+.dashboardSummary > div {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+}
+
+/* .dashboardSummary > div > p { */
+  /* background-color: rgba(70, 117, 218, 0.932); */
+  /* background: linear-gradient( 65deg, #23cfb5 20%, rgba(28,168,196,1) 100% ); */
+  /* background-image: linear-gradient(147deg, rgb(35,31,32) 0%, #e0dbc7 50%); */
+  /* background: linear-gradient(135deg,#C1A582 0,#CC4400 100%);
+  color: white;
+  border-radius: 100px;
+  font: 300 1.3rem "Roboto";
+  text-align: center;
+  padding: 1.5rem;
+  width: 100%;
+  font-weight: 500;
+  margin: 0 2rem;
+} */
+
+.dashboardSummary > div > p {
+  /* background-color: rgba(70, 117, 218, 0.932); */
+  /* background: linear-gradient( 65deg, #23cfb5 20%, rgba(28,168,196,1) 100% ); */
+  /* background-image: linear-gradient(147deg, rgb(35,31,32) 0%, #e0dbc7 50%); */
+  background: linear-gradient(135deg,#C1A582 0,#CC4400 100%);
+  color: white;
+  border-radius: 10px;
+  font: 300 1.3rem "Roboto";
+  text-align: center;
+  padding: 1.5rem;
+  width: 20%;
+  font-weight: 500;
+  margin: 0 2rem;
+}
+
+.dashboardSummaryBox2 > a {
+  color: rgb(255, 252, 252);
+  font: 300 1.6rem "Roboto";
+  text-align: center;
+  /* background-color: rgb(255, 233, 174); */
+  /* background-image: linear-gradient(147deg, rgb(35,31,32) 0%, #e0dbc7 50%); */
+  background: linear-gradient(135deg,#C1A582 0,#CC4400 100%);
+  text-decoration: none;
+  padding: 1.5rem;
+  width: 20%;
+  height: 10vmax;
+  margin: 2rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.dashboardSummaryBox2 > a:first-child {
+  background-color: rgb(255, 110, 110);
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+
+.dashboardSummaryBox2 > a:last-child {
+  background-color: rgb(51, 51, 51);
+  color: rgb(255, 251, 251);
+  font-weight: 500;
+}
+
+.lineChart {
+  width: 50%;
+  margin: auto;
+}
+
+.doughnutChart {
+  width: 20vmax;
+  margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .dashboardPage {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboardContainer {
+    border-left: none;
+  }
+
+  .dashboardSummary > div > p {
+    margin: 0;
+  }
+
+  .dashboardSummaryBox2 > a {
+    padding: 0.5rem;
+    margin: 1rem;
+    font: 300 0.9rem "Roboto";
+  }
+}

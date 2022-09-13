@@ -1,0 +1,12 @@
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.inputContainer > svg {
+  padding: 0.25rem;
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 0.55);
+}

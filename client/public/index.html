@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./rlogo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="./rlogo.png" />
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    <title>Ricey</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script>
+      var url =
+        "https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?19211";
+      var s = document.createElement("script");
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = url;
+      var options = {
+        enabled: true,
+        chatButtonSetting: {
+          backgroundColor: "#4dc247",
+          ctaText: "",
+          borderRadius: "25",
+          marginLeft: "0",
+          marginBottom: "50",
+          marginRight: "50",
+          position: "right",
+        },
+        brandSetting: {
+          brandName: "Ricey",
+          brandSubTitle: "Typically replies within a day",
+          brandImg: "https://cdn.clare.ai/wati/images/WATI_logo_square_2.png",
+          welcomeText: "Hi there!\nHow can I help you?",
+          messageText: `Hello, Ricey team`,
+          backgroundColor: "#0a5f54",
+          ctaText: "Start Chat",
+          borderRadius: "25",
+          autoShow: false,
+          phoneNumber: "94776770004",
+        },
+      };
+      s.onload = function () {
+        CreateWhatsappChatWidget(options);
+      };
+      var x = document.getElementsByTagName("script")[0];
+      x.parentNode.insertBefore(s, x);
+    </script>
+  </body>
+</html>

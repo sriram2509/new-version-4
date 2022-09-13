@@ -1,0 +1,84 @@
+.ordersHeading {
+  width: 90%;
+  height: 20%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 1.5rem auto 0;
+}
+
+.ordersHeading h1 {
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 2.35vmax;
+  /* width: 29rem; */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5vmax;
+  word-spacing: 0.9vmax;
+  padding: 0.5rem;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.55);
+}
+
+.myOrdersContainer {
+  padding: 5vmax;
+  width: 90%;
+  /* height: 100vh; */
+  margin: auto;
+  /* border: 1px solid black; */
+}
+
+.myOrdersTable div {
+  font-size: 0.9rem;
+  font-weight: 400;
+  border: none;
+}
+
+.myOrdersTable a {
+  color: rgba(0, 0, 0, 0.55);
+  transition: all 0.4s;
+}
+
+.myOrdersTable a:hover {
+  color: rgb(250, 137, 8);
+}
+
+.MuiDataGrid-main {
+  height: 100vh;
+}
+
+.MuiDataGrid-columnHeaders {
+  background: rgb(6, 42, 30);
+  background: linear-gradient(
+    65deg,
+    rgba(6, 42, 30, 1) 10%,
+    rgb(16, 99, 116) 90%
+  );
+}
+
+.MuiDataGrid-columnHeaders > div {
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  /* padding: 0.5vmax !important; */
+}
+
+.MuiDataGrid-columnSeparator {
+  display: none !important;
+}
+
+.greenColor {
+  color: green;
+}
+
+.redColor {
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .myOrdersContainer {
+    padding: 3vmax 0;
+  }
+  .MuiDataGrid-main {
+    height: 90vh;
+  }
+}

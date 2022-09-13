@@ -1,0 +1,25 @@
+.speedDialContainer {
+  position: relative;
+}
+
+.speedDial {
+  position: absolute;
+  width: 100%;
+  top: -14px;
+
+  /* width: fit-content;
+  top: -40px;
+  right: 25px; */
+}
+
+.speedDial > button {
+  min-height: 28px;
+  width: 28px;
+  height: 28px;
+}
+
+.speedDialIcon {
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+}
